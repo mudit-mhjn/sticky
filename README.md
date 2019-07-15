@@ -1,3 +1,4 @@
 # sticky
-Command line notes for windows (CMD application)
-Just like we write notes on sticky paper, this command line software allows you to store notes on a local database created on your hardrive
+
+Command line note making utility for Windows-10 OS.
+Add, Edit, View Notes on Command Prompt/Powershell
