@@ -3,6 +3,19 @@ import getter
 
 # getter.get_note()
 # exit()
+print("Enter password: ")
+count = 5
+while True:
+    password = input()
+    if password == "sticky":
+        break
+    else:
+        print("try again")
+        count = count-1
+    if count == 0:
+        print("max chances given")
+        exit()
+
 
 if len(sys.argv) == 1:
     while True:
@@ -12,7 +25,8 @@ if len(sys.argv) == 1:
         else:
             break
     if instruction == "view":
-        pass
+        num = input("Note you want to see: ")
+        getter.get_note(num)
 
 inputs = sys.argv[:2]
 
