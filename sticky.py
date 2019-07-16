@@ -1,5 +1,7 @@
 import sys
 import getter
+import adder
+
 
 # getter.get_note()
 # exit()
@@ -27,7 +29,10 @@ if len(sys.argv) == 1:
     if instruction == "view":
         num = input("Note you want to see: ")
         getter.get_note(num)
-
+    elif instruction == "add":
+        note_heading = input("please enter the heading of the note: \n")
+        note_main = input("enter note:")
+        adder.add_note(note_heading,note_main)
 inputs = sys.argv[:2]
 
 # Row column Indexing
