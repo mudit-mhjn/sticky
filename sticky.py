@@ -22,7 +22,7 @@ while True:
 if len(sys.argv) == 1:
     while True:
         instruction = input("How can I help you?\n1. View a note (type 'view')\n2. Add a note (type 'add')\nResponse : ")
-        if instruction not in ["view","add"]:
+        if instruction not in ["view","add", "MUDIT"]:
             print("invalid choice!")
         else:
             break
@@ -38,3 +38,4 @@ inputs = sys.argv[:2]
 # Row column Indexing
 # Editing ROws in Pandas DF "inplace"
 # argparse
+#hello
